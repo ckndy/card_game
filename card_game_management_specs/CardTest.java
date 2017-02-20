@@ -7,22 +7,22 @@ public class CardTest {
   Card card;
 
   @Before
-  public void before(){
+  public void before() {
     card = new Card(SuitType.CLUBS, RankType.THREE);
   }
 
   @Test
-  public void canGetSuit(){
+  public void canGetSuit() {
     assertEquals(SuitType.CLUBS, card.getSuit());
   }
 
   @Test
-  public void canGetRank(){
+  public void canGetRank() {
     assertEquals(RankType.THREE, card.getRank());
   }
 
   @Test
-  public void canShowCard(){
+  public void canShowCard() {
     assertEquals("THREE of CLUBS", card.showCard());
   }
 }

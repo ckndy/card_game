@@ -11,7 +11,7 @@ public class PlayerTest {
   Card card2;
 
   @Before
-  public void before(){
+  public void before() {
     player1 = new Player("Chris");
     player2 = new Player("Murray");
 
@@ -22,24 +22,24 @@ public class PlayerTest {
   }
 
   @Test
-  public void PlayerHasName(){
+  public void PlayerHasName() {
     assertEquals("Chris", player1.getName());
   }
 
 // No setHand has been called on Player2. AssertNull checks that Null has been returned.
  
   @Test 
-  public void handStartsEmpty(){
+  public void handStartsEmpty() {
     assertNull(player2.getHand()[0]);
   }
 
   @Test
-  public void canSetHand(){
+  public void canSetHand() {
     assertEquals(card2, player1.getHand()[1]);
   }
 
   @Test
-  public void canShowHand(){
+  public void canShowHand() {
     assertEquals("SIX of HEARTS, TWO of DIAMONDS", player1.showHand());
   }
 }

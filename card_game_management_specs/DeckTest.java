@@ -7,12 +7,12 @@ public class DeckTest{
   Deck deck;
 
   @Before
-  public void before(){
+  public void before() {
     deck = new Deck();
   } 
 
   @Test
-  public void hasDeckof52(){
+  public void hasDeckof52() {
     assertEquals(52, this.deck.getDeck().size());
   }
 }
